@@ -158,10 +158,19 @@ nav form{
     background: none;
     cursor: pointer;
 }
-.closePopup img{
-    width: 24px;
-    height: 24px;
+span.crossIcon{position: relative;}
+span.crossIcon:before, span.crossIcon:after {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 18px;
+    left: 0;
+    top: 0;
+    background: red;
+    border-radius: 8px;
+    transform: rotate(45deg);
 }
+span.crossIcon:after{transform: rotate(-45deg);}
 body::-webkit-scrollbar{width: 10px;}
 body::-webkit-scrollbar-thumb{
     background: #24232350;

@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+html, body{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
 body{
     background-color: #2b1d0f;
     color: #fff;
@@ -21,9 +26,14 @@ header nav h1{
     letter-spacing: 1px;
     text-transform: uppercase;
 }
+nav form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
 .searchBox{
     flex-grow: 1;
-    margin-right: 10px;
 }
 .searchButton, .searchBox{
     border: none;
@@ -163,9 +173,11 @@ body::-webkit-scrollbar-track{background: #a1a1a1;}
     nav{
         flex-direction: column;
     }
+    header nav h1, .searchBox{text-align: center;}
     nav form{
-        width: 80%;
+        /* width: 80%; */
         margin-top: 20px;
         text-align: center;
+        flex-direction: column;
     }
 }
